@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Expose';
+    src: url('fonts/Expose-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heavyhea';
+    src: url('fonts/HEAVYHEA.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Markin';
+    src: url('fonts/Markin-LT-Ultra-Bold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'P5Hatty';
+    src: url('fonts/p5hatty-1.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Persona5main';
+    src: url('fonts/Persona5main.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Persona5menu';
+    src: url('fonts/Persona5MenuFontPrototype-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    font-family: 'Markin', sans-serif;
+}
+
+header {
+  background-color: #e60012;
+  padding: 1.5rem;
+  text-align: center;
+  transform: skewY(-2deg);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  border-bottom: 5px solid #000;
+}
+header h1 {
+  transform: skewY(2deg);
+  font-family: 'P5Hatty', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+}
+
+footer {
+  background-color: #e60012;
+  padding: 1rem;
+  border-top: 3px solid #e60012;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 0 #000;
+}
+
+
+.title {
+    font-family: 'Persona5menu', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-outline-danger {
+    border-color: #e60012;
+    color: #e60012;
+}
+.btn-outline-danger:hover {
+    background-color: #e60012;
+    color: #fff;
+}
+
+.accordion-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 0;
+  transform: skewX(-4deg);
+  transition: all 0.2s ease-in-out;
+}
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+  background-color: red;
+  color: white;
+  border-color: white;
+  transform: scale(1.03) skewX(-4deg);
+}
+.accordion-button::after {
+  display: none !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion-item {
+  background-color: black;
+  border: 3px solid white;
+  margin-bottom: 10px;
+  transform: rotate(-1.5deg);
+  padding: 0;
+}
+.accordion-body {
+  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  padding: 1rem;
+  border-top: 2px solid white;
+}
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+}
+.accordion-button {
+  background-color: black;
+  color: white;
+  font-family: 'Persona5', sans-serif;
+  border: 3px solid white;
+  border-radius: 5px;
+  transform: skewX(-5deg);
+  margin: 0;
+  padding: 1rem;
+}
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.accordion-button::after {
+  display: none !important;
+}
+.accordion-collapse {
+  background-color: black;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 1rem;
+  transform: skewX(-5deg);
+  color: white;
+  border-radius: 0 0 5px 5px;
+  margin-top: -1px; /* colar no botão sem espaço */
+}
+
+.persona-box {
+  background-color: #000;
+  color: #fff;
+  border: 4px solid #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 6px 6px 0 #e60012, -3px -3px 0 #fff;
+  transform: rotate(-2deg);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+.persona-box:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+.persona-box h5 {
+  text-shadow: 2px 2px 0 #000;
+  font-size: 1.3rem;
+}
+.persona-box .text-muted {
+  color: #bbb !important;
+  font-size: 0.9rem;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: #e60012;
+}
